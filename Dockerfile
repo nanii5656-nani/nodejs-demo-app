@@ -1,5 +1,5 @@
 # Dockerfile
-FROM public.ecr.aws/docker/library/node:18-alpine
+FROM mcr.microsoft.com/playwright/node:18-bullseye
 
 WORKDIR /usr/src/app
 
