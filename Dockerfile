@@ -1,5 +1,5 @@
 # Dockerfile
-FROM mcr.microsoft.com/playwright/node:18-bullseye
+FROM node:18-alpine
 
 WORKDIR /usr/src/app
 
