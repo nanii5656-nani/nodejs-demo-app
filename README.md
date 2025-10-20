@@ -60,7 +60,7 @@ we should perform these commands in terminal :-(Install Node deps locally in pro
 --  git add .
 --  git commit -m "Initial commit: nodejs demo app + Dockerfile + workflow"
 --  git branch -M main
---  git remote add origin https://github.com/<your-github-username>/nodejs-demo-app.git
+--  git remote add origin 
 --  git push -u origin main
 
 ### Add GitHub Secrets (DO NOT put tokens in repo files)
