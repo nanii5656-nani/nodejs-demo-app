@@ -36,11 +36,66 @@ The CI/CD pipeline is defined in the GitHub Actions workflow file:
 - **Build Job:** Installs dependencies, runs tests, and builds the Docker image.
 - **Deploy Job:** Pushes the Docker image to DockerHub.
 
-### Sample Workflow Trigger
-```yaml
-on:
-  push:
-    branches:
-      - main
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+### Steps and deploy :---
+
+After creating app files and Docker file and .github/workflows/main.yaml 
+
+we should perform these commands in terminal :-(Install Node deps locally in project)
+
+* npm install
+*  npm start
+
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  ### Create GitHub repository and link (GUI steps + commands)
+
+-- Create a New GitHub repo make it public 
+
+ --perform these commands in terminal :--
+
+--  git init
+--  git add .
+--  git commit -m "Initial commit: nodejs demo app + Dockerfile + workflow"
+--  git branch -M main
+--  git remote add origin https://github.com/<your-github-username>/nodejs-demo-app.git
+--  git push -u origin main
+
+### Add GitHub Secrets (DO NOT put tokens in repo files)
+
+On GitHub, open your repository → Settings → Secrets and variables → Actions → New repository secret.
+
+Add a secret named DOCKERHUB_USERNAME → set value = your DockerHub username.
+
+Add a secret named DOCKERHUB_ACCESS_TOKEN → set value = the token you copied from DockerHub.
+
+(Secrets are referenced in the workflow file as ${{ secrets.DOCKERHUB_USERNAME }} etc.)
+
+***Create an access token:***
+
+In DockerHub, go to Account Settings → Security → New Access Token.
+Give it a name like github-action-token.
+Create and copy the token value and paste in github secret value.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+**After that check Action tab we see Build and Push as all workflow completed all job done**
+**Next we should check in DockerHub repo is web app is succesfully pushed or not**
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+### SCREENSHOTS :---
+
+<img width="952" height="438" alt="image" src="https://github.com/user-attachments/assets/24ec1cef-f9c4-4e99-ab16-ff856d7e1a89" />
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<img width="697" height="453" alt="image" src="https://github.com/user-attachments/assets/dcbc8674-2473-45c3-979c-fb8eb81d0c40" />
 
 
