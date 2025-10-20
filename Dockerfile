@@ -1,6 +1,5 @@
 # Dockerfile
-FROM docker.io/library/node:18-alpine
-
+FROM mcr.microsoft.com/playwright/node:18-bullseye
 
 WORKDIR /usr/src/app
 
