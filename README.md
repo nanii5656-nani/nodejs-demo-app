@@ -91,7 +91,8 @@ Create and copy the token value and paste in github secret value.
 ### SCREENSHOTS :---
 
 
-<img width="959" height="492" alt="image" src="https://github.com/user-attachments/assets/bdcd6bef-c4b0-48da-b3e6-1efa5b093537" />
+<img width="950" height="475" alt="image" src="https://github.com/user-attachments/assets/39dfb8e0-b8db-4e84-80e7-4a0b0e4b403a" />
+
 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
